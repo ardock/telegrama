@@ -61,8 +61,8 @@
             android:required="false"/>
 
     <uses-sdk
-            android:minSdkVersion="8"
-            android:targetSdkVersion="18"/>
+            android:minSdkVersion="9"
+            android:targetSdkVersion="19"/>
 
     <application
             android:name="org.telegram.android.TelegramApplication"
