@@ -14,7 +14,6 @@ import android.widget.FrameLayout;
 import android.widget.Toast;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
-import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -46,19 +45,11 @@ public abstract class TelegramMapFragment extends TelegramFragment {
     protected View createMapView(int layout, LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View inflatedView = wrap(inflater).inflate(layout, container, false);
         preferences = getActivity().getSharedPreferences("org.telegram.android.maps", Context.MODE_PRIVATE);
-        try {
-            MapsInitializer.initialize(getActivity());
-        } catch (GooglePlayServicesNotAvailableException e) {
-            // TODO handle this situation
-        }
 
+        MapsInitializer.initialize(getActivity());
         mMapView = (MapView) inflatedView.findViewById(R.id.map);
+        MapsInitializer.initialize(application);
 
-        try {
-            MapsInitializer.initialize(application);
-        } catch (GooglePlayServicesNotAvailableException e) {
-            e.printStackTrace();
-        }
 
         Bundle mapBundle = null;
         if (savedInstanceState != null) {
