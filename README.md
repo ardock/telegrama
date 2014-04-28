@@ -1,36 +1,11 @@
-Telegrama: Telegram A Edition Android App
+TelegramA: Telegram A Edition
 ========
 
-My experimental fork of Telegram S Edition Android App that was created by Stepan Korshakov:
-
-[![Telegram S](https://developer.android.com/images/brand/en_generic_rgb_wo_45.png)](https://play.google.com/store/apps/details?id=org.telegram.android "Telegram S")
-
-This version based on open-source [telegram-api](https://github.com/ex3ndr/telegram-api), [mtproto](https://github.com/ex3ndr/telegram-mt) and [tl-core](https://github.com/ex3ndr/telegram-tl-core) libraries.
-
-Building project
-------------
-
-#### Build variants
-There are multiple configurations of building app, some of them:
-
-1. ````gradle assembleDevDebug```` - Development build for IDE, recomended for daily usage
-2. ````gradle assembleCommonRelease```` - Release version for Google Play. Release versions need additional configuration for signing keys.
-3. ````gradle assembleCommonDebuggable```` - Release version with debugging enabled for testing
-4. ````gradle assembleBetaRelease```` - Builds [beta-version](https://play.google.com/store/apps/details?id=org.telegram.android.beta) of an app. Includes russian translations.
-5. ````gradle assembleMdpiRelease```` - Release version for MDPI devices
-6. ````gradle assembleHdpiRelease```` - Release version for HDPI devices
-7. ````gradle assembleXhdpiRelease```` - Release version for XHDPI devices
-8. ````gradle assembleXxhdpiRelease```` - Release version for XXHDPI devices
-9. ````gradle dist```` - Building release distributive
-10. ````gradle lightDist```` - Building release light version of distributive
-
-#### Build from Sources
-1. Checkout sources with all submodules
-2. Select required build configuration and run required ````gradle```` command
-
-#### Using from IDE
-
-This sources are prepared for IntelliJ IDEA and Android Studio. Unfortunately IntelliJ IDEA has some bugs with gradle android projects, but i can't do something with this.
+My experimental version of Telegram based on open-source created by Stepan Korshakov:
+[Telegram S Edition Android App](https://github.com/ex3ndr/telegram)
+[telegram-api](https://github.com/ex3ndr/telegram-api)
+[mtproto](https://github.com/ex3ndr/telegram-mt)
+[tl-core](https://github.com/ex3ndr/telegram-tl-core)
 
 More information
 ----------------
@@ -56,6 +31,34 @@ English: http://core.telegram.org/mtproto/TL
 
 Russian: http://dev.stel.com/mtproto/TL
 
+#### Telegram S Edition
+
+[![Telegram S](https://developer.android.com/images/brand/en_generic_rgb_wo_45.png)](https://play.google.com/store/apps/details?id=org.telegram.android "Telegram S")
+
+Building project
+------------
+
+#### Build variants
+There are multiple configurations of building app, some of them:
+
+1. ````gradle assembleDevDebug```` - Development build for IDE, recomended for daily usage
+2. ````gradle assembleCommonRelease```` - Release version for Google Play. Release versions need additional configuration for signing keys.
+3. ````gradle assembleCommonDebuggable```` - Release version with debugging enabled for testing
+4. ````gradle assembleBetaRelease```` - Builds [beta-version](https://play.google.com/store/apps/details?id=org.telegram.android.beta) of an app. Includes russian translations.
+5. ````gradle assembleMdpiRelease```` - Release version for MDPI devices
+6. ````gradle assembleHdpiRelease```` - Release version for HDPI devices
+7. ````gradle assembleXhdpiRelease```` - Release version for XHDPI devices
+8. ````gradle assembleXxhdpiRelease```` - Release version for XXHDPI devices
+9. ````gradle dist```` - Building release distributive
+
+#### Build from Sources
+1. Checkout sources with all submodules
+2. Select required build configuration and run required ````gradle```` command
+
+#### Using from IDE
+
+This sources are prepared for Android Studio.
+
 License
 ----------------
-Telegram A Edition uses [Apache v2 License](LICENSE) based on Telegram S edition that uses [MIT Licence](LICENCE)
+Telegram A Edition uses [Apache v2 License](LICENSE) based on libraries that uses [MIT Licence](LICENCE)
