@@ -1,7 +1,7 @@
-Telegram S Edition Android App
+Telegrama: Telegram A Edition Android App
 ========
 
-This is second version of Telegram app.
+My experimental fork of Telegram S Edition Android App that was created by Stepan Korshakov:
 
 [![Telegram S](https://developer.android.com/images/brand/en_generic_rgb_wo_45.png)](https://play.google.com/store/apps/details?id=org.telegram.android "Telegram S")
 
@@ -56,6 +56,6 @@ English: http://core.telegram.org/mtproto/TL
 
 Russian: http://dev.stel.com/mtproto/TL
 
-Licence
+License
 ----------------
-Project uses [MIT Licence](LICENCE)
+Telegram A Edition uses [Apache v2 License](LICENSE) based on Telegram S edition that uses [MIT Licence](LICENCE)
