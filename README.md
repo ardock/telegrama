@@ -1,7 +1,8 @@
 TelegramA: Telegram A Edition
 ========
 
-My experimental version of Telegram based on open-source created by Stepan Korshakov:
+My experimental version of Telegram based on open-source created by Stepan Korshakov
+
 [Telegram S Edition Android App](https://github.com/ex3ndr/telegram)
 [telegram-api](https://github.com/ex3ndr/telegram-api)
 [mtproto](https://github.com/ex3ndr/telegram-mt)
@@ -61,4 +62,4 @@ This sources are prepared for Android Studio.
 
 License
 ----------------
-Telegram A Edition uses [Apache v2 License](LICENSE) based on libraries that uses [MIT Licence](LICENCE)
+Telegram A Edition uses [Apache v2 License](LICENSE) based on libraries that use [MIT Licence](LICENCE)
